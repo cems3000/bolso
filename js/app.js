@@ -1,5 +1,5 @@
 var url = window.location.href;
-var swLocation = '/cartera/sw.js';
+var swLocation = '/bolso/sw.js';
 
 if (navigator.serviceWorker) {
     if (url.includes('localhost')) {
