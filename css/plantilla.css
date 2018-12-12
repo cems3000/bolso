@@ -1,0 +1,527 @@
+/*=============================================
+GLOBAL
+=============================================*/
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	background: #eee;
+}
+
+/*=============================================
+COLOR PLANTILLA
+=============================================*/
+
+.backColor, .backColor a{
+	background: #d4433b;
+	color:white;
+}
+
+/*=============================================
+CATEGORIAS
+=============================================*/
+
+.listaCategorias li:hover, .listaSubcategorias li:hover{
+	color: #d4433b;
+}
+
+
+/*=============================================
+ERROR 404
+=============================================*/
+
+.error404 h1{
+	font-size:10em;
+	color:#333;
+	text-shadow:8px 8px 1px #dadada;
+}
+
+
+/*=============================================
+BANNER
+=============================================*/
+
+.banner{
+	position: relative;
+	overflow:hidden;
+}
+
+.banner .textoBanner{
+	position:absolute;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+
+.banner .textoIzq {
+	left:0px; 
+	text-align:left;
+/*	top:63px;*/
+}
+
+.banner .textoIzq h1{
+	background:rgba(0,0,0,.9);
+	text-shadow:0px 0px 10px black;
+	border-radius:0px 5px 5px 0px;
+	/*font-size:40px;
+	padding:25px;
+	padding-left: 100px;*/
+}
+
+.banner .textoDer{
+	right:50px; 
+	text-align:right;
+	/*top:20px;*/
+}
+
+/*=============================================
+CURSOS
+=============================================*/
+
+.tituloCurso{
+	line-height:20px;
+}
+
+.precioFinal{
+	margin-top:-5px;
+}
+
+.precioReal{
+	text-decoration: line-through;
+	color:#999;
+	font-size: 15px;
+	margin-top:-5px;
+}
+
+.verCurso{
+	position:absolute; 
+	bottom:17px;
+	right:27px;
+}
+
+.fondoUdemy{
+	position:absolute; 
+	top:45%; 
+	left:50%; 
+	width:300px; 
+	margin-left:-150px; 
+	text-overflow:ellipsis; 
+	overflow:hidden; 
+	border-bottom:3px solid green;
+
+}
+
+/*=============================================
+BOTTOM
+=============================================*/
+
+#bottom i{
+	color:#A9A;
+	margin:10px 0px 5px 0px;
+	font-size:50px;
+	text-align:center;
+	line-height:150px;
+	width:150px;
+	height:150px;
+	border:3px solid #A9A;
+	border-radius:100%;
+}
+
+#bottom p{
+	color:#222;
+	padding:10px;
+	line-height:20px;
+}
+
+#bottom i.fa-users{
+	color:#ec5252;
+	border:3px solid #ec5252;
+}
+
+#bottom i.fa-graduation-cap{
+	color:#1a404f;
+	border:3px solid #1a404f;
+}
+
+
+#bottom i.fa-laptop{
+	color:#f68f30;
+	border:3px solid #f68f30;
+}
+
+#bottom i.fa-check-square{
+	color:#6e1a52;
+	border:3px solid #6e1a52;
+}
+
+/*=============================================
+SCROLL UP
+=============================================*/
+#scrollUp{
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/plantilla/flecha.jpg);
+}
+
+/*=============================================
+ESCRITORIO EXTRA GRANDE (revisamos en 1920px en adelante)
+=============================================*/
+@media (min-width:1600px){
+
+	.container{
+		max-width: 80% !important;
+	}
+
+	header{
+		height:70px;
+	}
+
+	.logotipo{
+		margin-top:-7px;
+	}
+
+	#modalCategorias .modal-content{
+		margin-top: 54px;
+	}
+
+	.banner{
+		height:200px;
+	}
+
+	.textoBanner h1{
+		font-size:35px;
+		line-height:25px;
+	}
+
+	.textoBanner h2{
+		font-size:30px;
+		line-height:25px;
+	}
+
+	.textoBanner h3{
+		font-size:24px;
+		line-height:25px;
+	}
+	
+	.banner .textoIzq {
+		top:63px; 
+	}
+
+	.banner .textoIzq h1{
+		font-size:40px;
+		padding:25px;
+		padding-left: 100px;
+	}
+
+	.banner .textoDer{
+		top:20px; 
+	}
+
+	/*=============================================
+	5 COLUMNAS
+	=============================================*/
+
+	.col-5th{
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		flex: 0 0 20% !important;
+		max-width: 20% !important;
+	}
+
+}
+
+/*=============================================
+ESCRITORIO (XL revisamos en 1366px en adelante)
+=============================================*/
+
+@media (max-width:1599px) and (min-width:1200px){
+
+	.container{
+		max-width: 100% !important;
+	}
+
+	header{
+		height:70px;
+	}
+
+	#modalCategorias .modal-content{
+		margin-top: 54px;
+	}
+
+	.banner{
+		height:200px;
+	}
+
+	.textoBanner h1{
+		font-size:35px;
+		line-height:25px;
+	}
+
+	.textoBanner h2{
+		font-size:30px;
+		line-height:25px;
+	}
+
+	.textoBanner h3{
+		font-size:24px;
+		line-height:25px;
+	}
+	
+	.banner .textoIzq {
+		top:63px; 
+	}
+
+	.banner .textoIzq h1{
+		font-size:40px;
+		padding:25px;
+		padding-left: 100px;
+	}
+
+	.banner .textoDer{
+		top:20px; 
+	}
+
+	/*=============================================
+	5 COLUMNAS
+	=============================================*/
+
+	.col-5th{
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		flex: 0 0 20% !important;
+		max-width: 20% !important;
+	}
+
+}
+
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+	
+	header{
+		height:70px;
+	}
+
+	.logotipo img{
+		margin-top: 2px;
+	}
+
+	#modalCategorias .modal-content{
+		margin-top: 54px;
+	}
+
+	.banner{
+		height:170px;
+	}
+
+	.textoBanner h1{
+		font-size:25px;
+		line-height:15px;
+	}
+
+	.textoBanner h2{
+		font-size:20px;
+		line-height:15px;
+	}
+
+	.textoBanner h3{
+		font-size:20px;
+		line-height:15px;
+	}
+	
+	.banner .textoIzq {
+		top:50px; 
+	}
+
+	.banner .textoIzq h1{
+		font-size:30px;
+		padding:25px;
+		padding-left:60px;
+	}
+
+	.banner .textoDer{
+		top:20px; 
+	}
+
+	/*=============================================
+	5 COLUMNAS
+	=============================================*/
+
+	.col-5th{
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		flex: 0 0 20% !important;
+		max-width: 20% !important;
+
+	}
+
+}
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+	
+	header{
+		height:70px;
+	}
+
+	#modalCategorias .modal-content{
+		margin-top: 54px;
+	}
+
+	.banner{
+		height:130px;
+	}
+
+	.textoBanner h1{
+		font-size:25px;
+		line-height:20px;
+	}
+
+	.textoBanner h2{
+		font-size:20px;
+		line-height:20px;
+	}
+
+	.textoBanner h3{
+		font-size:20px;
+		line-height:20px;
+	}
+	
+	.banner .textoIzq {
+		top:30px; 
+	}
+
+	.banner .textoIzq h1{
+		font-size:20px;
+		padding:25px;
+		padding-left:60px;
+	}
+
+	.banner .textoDer{
+		top:23px; 
+	}
+
+	.countdown{
+		display:none;
+	}
+
+}
+
+/*=============================================
+MÓVIL HORIZONTAL (SM revisamos en 576px)
+=============================================*/
+
+@media (max-width:767px) and (min-width:576px){
+	
+	header{
+		height:70px;
+	}
+
+	.logotipo img{
+		margin-top: 6px;
+	}
+
+	#modalCategorias .modal-content{
+		margin-top: 54px;
+	}
+
+	.banner{
+		height:100px;
+	}
+
+	.textoBanner h1{
+		display:none;
+	}
+
+	.textoBanner h2{
+		display:none;
+	}
+
+	.textoBanner h3{
+		display:none;
+	}
+	
+	.banner .textoIzq {
+		top:15px; 
+	}
+
+	.banner .textoIzq h1{
+		font-size:20px;
+		padding:20px;
+		text-align:center;
+		display:block;
+	}
+
+	.precioFinal{
+		font-size: 21px;
+	}
+
+}
+
+/*=============================================
+MOVIL VERTICAL (revisamos en 320px)
+=============================================*/
+
+@media (max-width:575px){
+
+	#modalCategorias .modal-content{
+		margin-top: 124px;
+	}
+
+	.banner{
+		height:90px;
+	}
+
+	.textoBanner h1{
+		display:none;
+	}
+
+	.textoBanner h2{
+		display:none;
+	}
+
+	.textoBanner h3{
+		display:none;
+	}
+	
+	.banner .textoIzq {
+		top:-7px; 
+		left:50%;
+		width:800px; 
+		margin-left: -400px;
+		text-align:center;
+	}
+
+	.banner .textoIzq h1{
+		font-size:20px;
+		padding:20px;
+		text-align:center;
+		display:block;
+		background: rgba(0,0,0,.1);
+	}
+
+	.verTodo{
+		margin-top:-25px;
+	}
+
+
+}
